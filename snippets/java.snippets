@@ -58,6 +58,15 @@ snippet tryf
 	}
 snippet rst
 	ResultSet ${1:rst}${2: = null}${3};${4}
+snippet constints Inner class to group constants
+	static class ${1} {
+		static final int ${2};
+		${3}
+		static {
+			int i = 0;
+			$2 = i++;
+		}
+	}${4}
 snippet nullclear Resetting a variable
 	if (${1:var} != null) {
 		$1.${2}
