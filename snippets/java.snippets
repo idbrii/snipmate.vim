@@ -72,6 +72,10 @@ snippet nullclear Resetting a variable
 		$1.${2}
 		$1 = null;
 	}${3}
+snippet Sout
+	System.out.println(${1});${2}
+snippet Serr
+	System.err.println(${1});${2}
 snippet alog
 	android.util.Log.${1:i}(${2:TAG}, "${3}");${4}
 snippet atag
